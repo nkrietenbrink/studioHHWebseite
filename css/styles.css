@@ -1,0 +1,66 @@
+body {
+    position: relative;
+    background: #000;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    transition: background 1s;
+    padding: 20px;
+}
+
+.nav {
+    margin: 0 auto;
+}
+
+#navbar.scrolled-nav {
+    background: #000;
+}
+
+#sectionLiveStream {
+    background-image: url(../imgs/room.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html body .nav-item a.nav-link {
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid;
+    margin: 9px;
+}
+
+html body .nav-item a.nav-link.active {
+    color: #fff;
+    background-color: #e0c646;
+    border-color: #e0c646;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapperInner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    min-height: 400px;
+}
